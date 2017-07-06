@@ -35,6 +35,9 @@ class JsonApiPaginateServiceProvider extends ServiceProvider
             $configuredMaximum = config('json-api-paginate.max_results');
             $numberParameter = config('json-api-paginate.number_parameter');
             $sizeParameter = config('json-api-paginate.size_parameter');
+            $limitParameter = config('json-api-paginate.limit_parameter');
+            $cursorParameter = config('json-api-paginate.cursor_parameter');
+            $offsetParameter = config('json-api-paginate.offset_parameter');
 
             if (is_null($maxResults)) {
                 $maxResults = $configuredMaximum;
